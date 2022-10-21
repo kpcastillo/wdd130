@@ -96,7 +96,7 @@
 } 
 .green3 {
   width: 200px; 
-  height: 300px; 
+  height: 200px; 
   background-color: green;
   grid-column: 1/2;
   justify-self: left;
@@ -104,7 +104,7 @@
 } 
 .yellow3 {
   width: 200px; 
-  height: 300px; 
+  height: 200px; 
   background-color: gold; 
   grid-column: 2/3;
  /*justify-items: right;*/
