@@ -86,7 +86,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
-  grid-gap: 0px 30px;
+  grid-gap: 0px 35px;
 }
 .red3 {
   width: 100%; 
