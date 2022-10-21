@@ -85,7 +85,7 @@
   /* This is the parent of the activity 3 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: end;
+  /*justify-items: end;*/
   grid-gap: 0px 40px;
 }
 .red3 {
@@ -106,8 +106,8 @@
   width: 330px; 
   height: 300px; 
   background-color: gold; 
-  /*grid-column: 2/3;*/
- justify-items: right;
+  grid-column: 2/3;
+ /*justify-items: right;*/
 } 
 .blue3 {
   width: 100%;
