@@ -86,6 +86,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
+  grid: column gap 20px;
 }
 .red3 {
   width: 100%; 
@@ -94,7 +95,7 @@
   grid-column: 1/3;
 } 
 .green3 {
-  width: 400px; 
+  width: 450px; 
   height: 300px; 
   background-color: green;
   grid-column: 1/2;
@@ -102,7 +103,7 @@
   
 } 
 .yellow3 {
-  width: 400px; 
+  width: 450px; 
   height: 300px; 
   background-color: gold; 
   /*grid-column: 2/3;*/
