@@ -16,11 +16,12 @@ nav a{
     text-align: center;
     color: white;
 }
-.buton-box{
+.button-box{
     text-align: center;
     grid-column: 2/3;
-    justify-self: center;
+    justify-items: center;
     align-self: center;
+
 }
 main section{
     text-align: center;
