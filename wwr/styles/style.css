@@ -198,7 +198,7 @@ nav{
     box-shadow: 5px 5px 10px darkgrey;
 }
 #hero-rivers-img{
-    width: 100%;
+    width: 85%;
 }
 #hero-rivers{
     text-align: center;
@@ -213,25 +213,27 @@ nav{
         transition: transform .5s;
         box-shadow: 5px 5px 10px #060644;
 }
+.card-river-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
 .rivers-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-
 }
 .salmon-river-img{
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 2/5;
 }
 .salmon-river{
-    grid-row: 5/9;
-    grid-column: 2/4;
+    grid-column: 5/9;
+    grid-row: 2/5;
 }
-.uta-rivers-img{
+.uta-river-img{
     grid-column: 7/9;
     grid-row: 5/7;
 }
-.utah-rivers{
+.utah-river{
     grid-column: 2/6;
     grid-row: 5/7;
 }
@@ -248,11 +250,14 @@ nav{
     font-family: Dangrek, monaco, 'Times New Roman';;
 }
 .rivers-p{
-    color: #ffffff;
+    color: gray;
+    display: inline;
+    background-color: #060644;
 }
 #background-rivers{
-    grid-column: 2/9;
-    grid-row: 2/9;
+    color: #060644;
+    grid-column: 3/8;
+    grid-row: 3/8;
     z-index: -1;
 }
 #rivers-header{
