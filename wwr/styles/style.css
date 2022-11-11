@@ -199,6 +199,7 @@ nav{
 }
 #hero-rivers-img{
     width: 85%;
+    box-shadow: 5px 5px 10px #00B4D8;
 }
 #hero-rivers{
     text-align: center;
@@ -214,7 +215,7 @@ nav{
 .card-river-img{
         border: 10px solid #FF8500;
         transition: transform .5s;
-        box-shadow: 5px 5px 10px #060644;
+        box-shadow: 5px 5px 10px #00B4D8;
 }
 .card-river-img:hover{
     opacity: .6;
