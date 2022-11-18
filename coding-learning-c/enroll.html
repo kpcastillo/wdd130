@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding-Learning_Centert</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo-link" href="indext.html">
+                <img class="logo" src="images/coding.png" alt="Logo image">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="enroll.html">Enroll</a>
+                <a href="site-plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <main>
+            <section id="hero-enroll">
+                <h1>Enroll</h1>
+                <img src="images/rsz_web-design-code2.jpg" alt="Computer screen">
+            </section>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="user-email">
+                    </li>
+                    <li>
+                        <label for="msg">Comments</label>
+                        <textarea id="msg" name="user-mesage"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form so we can read what was entered in it.
+                const formElement = document.forms[0];
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+                    // stop the form from doing the default action.
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                    // add a class to move everything down so our message doesn't cover it.
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
+            <section>
+                <img src="images/teacher-kids.png" alt="Teacher with kids">
+                <section>
+                    <h2>Membership</h2>
+                    <h4>We work with children 5-13 at any level. They work and learn at their peace and often work in projects and teams to encourage working with peers. </h4>
+                    <h4>To fit your and your child's needs you have the option to pre-pay for an entire year for a better price, half a year, monthly, or as you go (per class). We offer sibling and military discounts and seasonal specials.</h4>
+                    <h4>Coding is one skill we teach, but socializing and teamwork are always part of it. Help your child to unlock their full potential, make friends, have fun, and invest in their future.</h4>
+                    <h2>Schedule</h2>
+                    <h4>Every meeting is after school. We have meetings Monday through Friday, every hour from 4 pm - 7 pm, and your child can attend the center or meet online from the comfort of your home. Saturday meetings are every hour from 9 am - 3 pm.</h4>
+                    <h4>To enroll, fill out the form above, and a representative will contact you in less than 24 hours to schedule a free class and a tour of the facility so you and your child can love this program as much as we do.</h4>
+                    <h3>We are so excited to hear from you!</h3>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>The Coding Learning Center</p>
+            <a href="siteplan.html">Site Plan</a>
+            <div class="social">
+                <a href="https://facebook.com" target="blank"> 
+                    <img src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>
