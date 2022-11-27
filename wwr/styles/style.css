@@ -228,6 +228,7 @@ nav{
     column-gap: 0px;
     background-color: #060644;
     padding-top: 60px;
+
 }
 .salmon-river, .grand-canyon{
     text-align: right;
@@ -242,6 +243,9 @@ nav{
 .rivers-p{
     color: white;
     display: inline;
+}
+.grand-canyon-img{
+    padding-left: 20px;
 }
 #background-rivers{
     color: #060644;
