@@ -21,24 +21,48 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section id="programs-content">
                 <h1>Programs</h1>
-                <h2>Beginner:</h2>
-                <h4>Beginners Very visual, fun, and easy to understand. Kids start working on storytelling and game design using apps like code spark academy, 
-                    gamestar mechanic and scratch. At this point, the kid must always be in the line of sight of the instructor and often has questions. The instructor guides the children step by step. 
-                    This stage is a crucial time to cultivate a love for learning. </h4>
-                <h2>Intermediate:</h2>
-                <h4>Intermediates At this point, the instructor switches to being a supervisor: They let the children work more independently, but reassures them and keep monitoring them in case they need rescuing. The apps being use are CodeCombat, scratch, codeMoji, in others. 
-                    Children learn javascript and LUA.</h4>
-                <h2>Masters</h2>
-                <h4>Masters Children are sufficiently capable of dealing with edge cases themselves, becoming autonomous enough in creating games, coding, and programming. 
-                    Kids learn C# and Python.</h4>
             </section>
+            <button class="accordion">Beginners:</button>
+            <div class="panel">
+                <h4>Beginners Very visual, fun, and easy to understand. Kids start working on storytelling and game design using apps like code spark academy, 
+                        gamestar mechanic and scratch. At this point, the kid must always be in the line of sight of the instructor and often has questions. The instructor guides the children step by step. 
+                        This stage is a crucial time to cultivate a love for learning.</h4>
+            </div>
+            <button class="accordion">Intermediates:</button>
+            <div class="panel">
+                <h4>Intermediates At this point, the instructor switches to being a supervisor: They let the children work more independently, but reassures them and keep monitoring them in case they need rescuing. The apps being use are CodeCombat, scratch, codeMoji, in others. 
+                        Children learn javascript and LUA.</h4>
+            </div>
+            <button class="accordion">Masters:</button>
+            <div class="panel">
+                <h4>Masters Children are sufficiently capable of dealing with edge cases themselves, becoming autonomous enough in creating games, coding, and programming. 
+                        Kids learn C# and Python.</h4>
+            </div>
             <section id="programs-box">
                 <h2>Facts</h2>
                 <h4>Facts Problem-solving is a crucial skill to have. When children learn to code, it helps them develop problem-solving and essential skills such as logic, critical thinking, and STEM skills. While learning to code, children are encouraged to think critically and strategically to solve problems. Visual blocks are often used for younger children to represent programming concepts and terminology. 
                     Kids who code often have higher grades than other children.</h4>
+                <h4>More Facts</h4>
+                <h4>More Facts</h4>
             </section>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+                </script>
             <div id="programs-imgs">
                 <img src="images/comp-class.png" alt="Kids in Class">
                 <img src="images/kids-playing2.jpg" alt="Kids Playing">
