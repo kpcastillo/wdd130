@@ -42,10 +42,14 @@
             </div>
             <section id="programs-box">
                 <h2>Facts</h2>
-                <h4>Facts Problem-solving is a crucial skill to have. When children learn to code, it helps them develop problem-solving and essential skills such as logic, critical thinking, and STEM skills. While learning to code, children are encouraged to think critically and strategically to solve problems. Visual blocks are often used for younger children to represent programming concepts and terminology. 
+                <h4>Problem-solving is a crucial skill to have. When children learn to code, it helps them develop problem-solving and essential skills such as logic, critical thinking, and STEM skills. While learning to code, children are encouraged to think critically and strategically to solve problems. Visual blocks are often used for younger children to represent programming concepts and terminology. 
                     Kids who code often have higher grades than other children.</h4>
-                <h4>More Facts</h4>
-                <h4>More Facts</h4>
+                <h4>The tech industry makes up 35% of the total world market. 
+                    90% of the world's data was generated between 2019 and the present.</h4>
+                <h4>There are more than 585,000 tech companies in the US. 
+                    The Big Four (Amazon, Apple, Google and Facebook) are collectively worth $4 trillion.</h4>
+                <h4>Technology is most certainly continuing to grow at a steady rate, making information technology one of the fastest growing sectors in the world.
+                    Workforce growth rates are expected to double those of other industries, with some categories reaching 4-5 times the current rate by 2030.</h4>
             </section>
             <script>
                 var acc = document.getElementsByClassName("accordion");
@@ -62,12 +66,115 @@
                     }
                   });
                 }
-                </script>
-            <div id="programs-imgs">
-                <img src="images/comp-class.png" alt="Kids in Class">
-                <img src="images/kids-playing2.jpg" alt="Kids Playing">
-                <img src="images/computer-class.png" alt="Computer classroom">
+            </script>
+            <div class="row">
+                <div class="column">
+                    <img src="images/online-coding.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/playing-outside.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/classroom.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/boy-playing.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
             </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/online-coding.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/playing-outside.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/classroom.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/boy-playing.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/online-coding.jpg" onclick="currentSlide(1)" alt="Computer Class">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/playing-outside.jpg" onclick="currentSlide(2)" alt="Kids Playing">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/classroom.jpg" onclick="currentSlide(3)" alt="Classroom">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/boy-playing.jpg" onclick="currentSlide(4)" alt="Playing playing-outside">
+                </div>
+                </div>
+            </div>
+            <script>
+                // Open the Modal
+                function openModal() {
+                  document.getElementById("myModal").style.display = "block";
+                }
+                
+                // Close the Modal
+                function closeModal() {
+                  document.getElementById("myModal").style.display = "none";
+                }
+                
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
         </main>
         <footer>
             <p>The Coding Learning Center</p>
