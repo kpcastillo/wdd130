@@ -213,15 +213,16 @@ footer a{
     width: 30%;
 }
 .demo{
-    width: 30%;
+    width: 100%;
     float: left;
     margin: 10px;
     max-width: 600px;
-
 }
-/*.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.hover-shadow{
+    width: 100%;
+    float: left;
+    max-width: 600px;
+
 }
   /* The Modal (background) */
 .modal {
@@ -318,4 +319,5 @@ img.hover-shadow {
 }
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 70%;
 }
