@@ -26,7 +26,7 @@ header{
     padding: 5px;
 }
 .logo{
-    width: 80px;
+    width: 90px;
     padding-top: 10px;
     align-self: center;
     justify-self: center;
@@ -137,6 +137,7 @@ footer a{
     margin: 0 auto;
     padding-bottom: 30px;
     padding-top: 20px;
+    max-width: 1800px;
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -206,11 +207,20 @@ footer a{
   /* Create four equal columns that floats next to eachother */
 .column{
     float: left;
-    width: 25%;
+    margin: 10px;
+    border: solid 5px #65CBDD;
+    box-shadow: 5px 5px 5px #54545B;
+    width: 30%;
+}
+.demo{
+    width: 30%;
+    float: left;
+    margin: 10px;
+
 }
 /*.row{
     display: grid;
-    grid-template-columns: 25%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
   /* The Modal (background) */
 .modal {
