@@ -59,7 +59,7 @@ p{
     color: #65CBDD;
 }
 #hero{
-    margin: o auto;
+    margin: 0 auto;
     text-align: center;
     width: 100%;
 }
@@ -100,12 +100,12 @@ p{
 }
 .home-boxes h2{
     padding-top: 25px;
-    justify-content: baseline;
+    justify-content: center;
     color: #E9D758;
 }
 .home-boxes p{
     padding-top: 25px;
-    justify-content: baseline;
+    justify-content: center;
     padding: 30px;
 }
 h2{
@@ -216,6 +216,7 @@ footer a{
     width: 30%;
     float: left;
     margin: 10px;
+    max-width: 600px;
 
 }
 /*.row{
