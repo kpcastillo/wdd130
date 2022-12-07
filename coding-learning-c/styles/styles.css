@@ -321,3 +321,101 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 70%;
 }
+#hero-enroll{
+    margin: 0 auto;
+    color: #65CBDD;
+    padding-top: 20px;
+    text-align: center;
+}
+#hero-enroll img{
+    border: solid 5px #65CBDD;
+    box-shadow: 5px 5px 5px #54545B;
+    margin-bottom: 40px;
+}
+form{
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Gemunu Libre", verdana, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: #E9D758;
+    width: 500px;
+    padding: 1em;
+    border: 3px solid #65CBDD;
+    color: #54545B;   
+    margin-bottom: 35px;
+}
+form h2{
+    color: #65CBDD;
+}
+.button-form{
+    color: #54545B;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "Press Start 2P", "courier new", georgia;
+    font: "Press Start 2P";
+}
+.button-form:hover{
+    opacity: 50%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+}
+input,
+textarea {
+    font: 1em "Gemunu Libre";
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #65CBDD;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+.button-form:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#enroll-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.enroll-text h4{
+    font-family: "Gemunu Libre", verdana, sans-serif;
+    font-size: 1.5em;
+}
+.enroll-text h3{
+    font-family: "Gemunu Libre", verdana, sans-serif;
+    font-size: 3em;
+    color: #65CBDD;
+}
+.enroll-text{
+    color: #54545B;
+    padding-top: 60px;
+}
